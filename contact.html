@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Pathirana Group</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Outfit', 'sans-serif'] },
+                    colors: {
+                        primary: '#1E293B',
+                        dark: '#0F172A',
+                        moto: '#FF5722',
+                        pharma: '#10B981',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark text-gray-100 antialiased overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-dark/80 backdrop-blur-lg border-b border-gray-800 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-3xl font-extrabold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500">
+                        PATHIRANA
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="text-gray-300 hover:text-white px-3 py-2 rounded-md font-semibold transition-colors nav-link">Home</a>
+                        <a href="motorcycle.html" class="text-gray-300 hover:text-moto px-3 py-2 rounded-md font-semibold transition-colors nav-link">Motorcycle Parts</a>
+                        <a href="pharmacy.html" class="text-gray-300 hover:text-pharma px-3 py-2 rounded-md font-semibold transition-colors nav-link">Osusal Pharmacy</a>
+                        <a href="contact.html" class="text-white hover:text-white px-3 py-2 rounded-md font-semibold transition-colors nav-link active">Contact Us</a>
+                    </div>
+                </div>
+                <!-- ... mobile toggle ... -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-300 hover:text-white focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-primary border-t border-gray-800">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="block text-gray-300 hover:text-white px-3 py-2 rounded-md text-base font-semibold">Home</a>
+                <a href="motorcycle.html" class="block text-gray-300 hover:text-moto px-3 py-2 rounded-md text-base font-semibold">Motorcycle Parts</a>
+                <a href="pharmacy.html" class="block text-gray-300 hover:text-pharma px-3 py-2 rounded-md text-base font-semibold">Osusal Pharmacy</a>
+                <a href="contact.html" class="block text-white px-3 py-2 rounded-md text-base font-semibold">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header (Minimal) -->
+    <div class="pt-32 pb-10 border-b border-gray-800 bg-gradient-to-b from-primary/50 to-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center scroll-animate">
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight">
+                Get in <span class="text-white">Touch</span>
+            </h1>
+            <p class="mt-2 text-lg text-gray-400 font-light">
+                We're here to help. Reach out to the Pathirana Group.
+            </p>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="py-16 bg-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                
+                <!-- Contact Info -->
+                <div class="space-y-8 scroll-animate">
+                    <div class="bg-primary/30 border border-gray-800 p-8 rounded-3xl backdrop-blur-sm">
+                        <h3 class="text-2xl font-bold text-white mb-6">Our Store</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center text-xl text-gray-300 mt-1 shrink-0">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-semibold text-white">Address</h4>
+                                    <p class="text-gray-400 mt-1">123 Main Road,<br>Colombo 00200,<br>Sri Lanka</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-moto/20 rounded-full flex items-center justify-center text-xl text-moto mt-1 shrink-0">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-semibold text-white">Motorcycle Department</h4>
+                                    <p class="text-gray-400 mt-1">+94 11 234 5678</p>
+                                    <p class="text-gray-500 text-sm">Mon-Sat, 9AM-6PM</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-pharma/20 rounded-full flex items-center justify-center text-xl text-pharma mt-1 shrink-0">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-semibold text-white">Osusal Pharmacy</h4>
+                                    <p class="text-gray-400 mt-1">+94 11 987 6543</p>
+                                    <p class="text-gray-500 text-sm">24/7 Available</p>
+                                </div>
+                            </div>
+                            
+                             <div class="flex items-start">
+                                <div class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center text-xl text-gray-300 mt-1 shrink-0">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-semibold text-white">Email Us</h4>
+                                    <p class="text-gray-400 mt-1">info@pathirana.lk</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="scroll-animate delay-100">
+                    <form class="bg-primary/30 border border-gray-800 p-8 rounded-3xl backdrop-blur-sm space-y-6">
+                        <h3 class="text-2xl font-bold text-white mb-6">Send a Message</h3>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-300 mb-2">First Name</label>
+                                <input type="text" class="input-field w-full bg-dark border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-gray-500" placeholder="Jane" required>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-300 mb-2">Last Name</label>
+                                <input type="text" class="input-field w-full bg-dark border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-gray-500" placeholder="Doe" required>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">Email Address</label>
+                            <input type="email" class="input-field w-full bg-dark border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-gray-500" placeholder="jane@example.com" required>
+                        </div>
+
+                         <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">Department</label>
+                            <select class="input-field w-full bg-dark border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-gray-500 appearance-none">
+                                <option>General Inquiry</option>
+                                <option>Motorcycle Parts Support</option>
+                                <option>Pharmacy Services</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">Message</label>
+                            <textarea rows="4" class="input-field w-full bg-dark border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-gray-500 resize-none" placeholder="How can we help you?"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 bg-white text-dark font-bold rounded-xl hover:bg-gray-200 transition-colors">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+             <!-- Map Placeholder -->
+            <div class="mt-16 h-96 bg-gray-800 rounded-3xl overflow-hidden border border-gray-700 relative scroll-animate">
+                <div class="absolute inset-0 flex flex-col items-center justify-center text-gray-500">
+                    <i class="fas fa-map w-16 h-16 text-4xl mb-4"></i>
+                    <p class="font-medium">Interactive Map Placeholder</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary/80 border-t border-gray-800 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+                <div>
+                    <h4 class="text-2xl font-bold mb-6 tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500">PATHIRANA</h4>
+                    <p class="text-gray-400 font-light">Delivering excellence in both mobility and healthcare. Your one-stop destination for genuine motorcycle parts and trusted pharmacy services.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-6 text-white">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="motorcycle.html" class="text-gray-400 hover:text-moto transition-colors">Motorcycle Parts</a></li>
+                        <li><a href="pharmacy.html" class="text-gray-400 hover:text-pharma transition-colors">Osusal Pharmacy</a></li>
+                        <li><a href="contact.html" class="text-white transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-6 text-white">Contact Info</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-center"><i class="fas fa-map-marker-alt w-6 text-center mr-2"></i> 123 Main Road, Colombo, Sri Lanka</li>
+                        <li class="flex items-center"><i class="fas fa-phone w-6 text-center mr-2"></i> +94 11 234 5678</li>
+                        <li class="flex items-center"><i class="fas fa-envelope w-6 text-center mr-2"></i> info@pathirana.lk</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 text-sm">© 2026 Pathirana Group. All rights reserved.</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:text-white transition-all"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:text-white transition-all"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
